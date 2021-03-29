@@ -10,8 +10,6 @@ public class ComparingTwoStrings {
 		System.out.println(s1.compareTo(s2));
 		System.out.println(s1.compareToIgnoreCase(s2));
 		
-		
-
 	}
 
 }
