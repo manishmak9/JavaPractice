@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Scanner;
+
 public class Palindrome {
 	
 	public static boolean isPalindrome1(String str) {
@@ -18,7 +20,6 @@ public class Palindrome {
 		if (str == null)
             return false;
         int length = str.length();
-        System.out.println(length / 2);
         for (int i = 0; i < length / 2; i++) {
 
             if (str.charAt(i) != str.charAt(length - i - 1))
@@ -29,7 +30,11 @@ public class Palindrome {
 
 	public static void main(String[] args) {
 		
-		System.out.println(Palindrome.isPalindrome2("madam"));
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a word: ");		
+		String s= sc.next();
+		
+		System.out.println(Palindrome.isPalindrome2(s)?s+" is a palindrome word.":s+" is not a palindrome word.");
 	}
 
 }
